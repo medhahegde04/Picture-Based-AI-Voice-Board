@@ -1,0 +1,28 @@
+# -------- DATASETS --------
+Datasets/
+Data/
+!Data/classes.txt
+!Data/data.yaml
+
+# -------- YOLO TRAINING RUNS -------- 
+runs/detect/*/
+!runs/detect/train5/
+runs/detect/train5/*
+!runs/detect/train5/weights/
+
+# -------- BASE MODEL --------
+Backend/yolov8n.pt
+
+# -------- NUMPY / CALIBRATION DATA --------
+*.npy
+*.npz
+
+# -------- FRONTEND DEPENDENCIES --------
+Frontend/node_modules/
+
+# -------- PYTHON CACHE --------
+__pycache__/
+*.pyc
+
+# -------- IDE --------
+.idea/

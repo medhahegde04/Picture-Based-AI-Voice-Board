@@ -1,0 +1,2 @@
+import React from 'react';
+export default function DefaultImage(){return(<div className="flex flex-col items-center justify-center text-slate-400 p-4"><svg width="96" height="74" viewBox="0 0 96 74" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="96" height="74" rx="8" fill="#f3f4f6"/><path d="M12 56L32 34l20 20 28-34 4 10" stroke="#94a3b8" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg><div className="mt-2 text-sm">Default placeholder image</div></div>);}
