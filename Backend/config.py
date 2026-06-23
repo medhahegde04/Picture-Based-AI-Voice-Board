@@ -3,15 +3,19 @@
 # DESCRIPTION: Centralized configuration settings for the YOLOv8 voice board project.
 # ==============================================================================
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # --- File Paths ---
 # Path to your best trained model weights (from the train5 run)
-MODEL_PATH = "D:/sem 5/assignments/Picture-Based-AI-Voice-Board/runs/detect/train5/weights/best.pt"
+MODEL_PATH = os.path.join(BASE_DIR, "runs", "detect", "train5", "weights", "best.pt")
 
 # Path to the file containing your 20 class names, one per line.
-CLASS_FILE_PATH = "D:/sem 5/assignments/Picture-Based-AI-Voice-Board/Data/classes.txt"
+CLASS_FILE_PATH = os.path.join(BASE_DIR, "Data", "classes.txt")
 
 # Path to the image file you want the system to analyze.
-TEST_IMAGE_PATH = "D:/sem 5/assignments/Picture-Based-AI-Voice-Board/Data/images/test/118.png"
+TEST_IMAGE_PATH = os.path.join(BASE_DIR, "Data", "images", "test", "118.png")
 
 # --- Model & Inference Parameters ---
 # Detection confidence threshold (0.25 is the default, adjust if needed)
